@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout requested commit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.commit_sha }}
           fetch-depth: 0
@@ -60,7 +60,7 @@ jobs:
             image: multica-web
     steps:
       - name: Checkout requested commit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.commit_sha }}
 
